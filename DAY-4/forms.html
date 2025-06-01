@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Inputs in HTML</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #e6fffa;
+        }
+
+
+        form {
+            background-color: #ffffff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #0f172a;
+        }
+
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #0f172a;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background-color: #f9fafb;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #14b8a6;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: #14b8a6;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0d9488;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <legend>Registration Form</legend>
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="John Doe" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="abc@example.com" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <label>
+                <input type="checkbox" name="subscribe"> Subscribe to newsletter
+            </label>
+            <label for="gender">Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="male">Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">Female
+            </label>
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
