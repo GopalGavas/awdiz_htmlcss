@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            background-color: #4d4c4c;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+
+        #about {
+            background-color: cornsilk;
+            padding: 50px;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .about-image {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .about-description {
+            font-size: 18px;
+            max-width: 800px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        #projects {
+            padding: 20px 50px;
+            /* background-color: #f4f4f4; */
+            border: 2px solid brown;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+        }
+
+        .section-heading {
+            text-align: center;
+            color: brown;
+
+        }
+
+        .project-1,
+        .project-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            max-width: 800px;
+
+        }
+
+        .project-description,
+        .project-stack {
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        .class-bold {
+            font-weight: bold;
+        }
+
+        .project-1,
+        .project-2 {
+            background-color: cornsilk;
+            padding: 20px;
+            border: 2px solid brown;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+        }
+
+        .project-2 {
+            margin-bottom: 40px;
+        }
+
+        #skills {
+            display: flex;
+            justify-content: space-around;
+            background-color: cornsilk;
+            padding: 50px;
+        }
+
+        .skills-container {
+            background-color: #4d4c4c;
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 5px;
+        }
+
+
+        .footer {
+            background-color: #4d4c4c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-section {
+            padding: 40px;
+            background-color: #f4f4f4;
+            border-top: 2px solid brown;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: brown;
+            outline: none;
+        }
+
+        .submit-btn {
+            background-color: brown;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #5c2f00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">About</li>
+                <li class="nav-item">Skills</li>
+                <li class="nav-item">Projects</li>
+                <li class="nav-item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <img src="./images/MyPicture.jpg" alt="my profile pic" class="about-image">
+                <h2 class="about-heading">Gopal Gavas - Web Developer</h2>
+                <p class="about-description">
+                    Backend Developer proficient in JavaScript, Node.js, and MongoDB, with expertise in designing and
+                    implementing scalable, secure backend systems. Skilled in developing RESTful APIs, optimizing
+                    database
+                    performance, and implementing robust authentication mechanisms to ensure data security and
+                    integrity.
+                </p>
+            </div>
+
+
+        </section>
+        <section id="projects">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="project-1">
+                <h3 class="project-heading">VideoTube - Backend API <span><a
+                            href="https://github.com/GopalGavas/videotube-backend">(Github-Link)</a></span></h3>
+                <p class="project-description">A powerful backend solution for VideoTube, a platform that enables users
+                    to upload, watch, and engage
+                    with videos. Inspired by YouTube’s core features, this backend offers a seamless video streaming and
+                    social interaction experience.</p>
+                <p class="project-stack">
+                    <span class="class-bold">Tech Stack: </span> Node.js,Express.js MongoDB, Mongoose, JWT, Multer
+                </p>
+            </div>
+
+            <div class="project-2">
+                <h3 class="project-heading">Ecommerce - Backend API <span><a
+                            href="https://github.com/GopalGavas/Ecommerce-backend">(Github
+                            Link)</a></span></h3>
+                <p class="project-description">
+                    SwiftMart is a fully functional e-commerce backend built with Node.js, Express, and MongoDB. It
+                    offers secure user authentication, product management, shopping cart functionality, order
+                    processing, and more. This backend leverages modern tools like JWT, Mongoose, and Cloudinary to
+                    provide a seamless experience for admins and users alike.
+                </p>
+                <p class="project-stack">
+                    <span class="class-bold">Tech Stack: </span> Node.js,Express.js MongoDB, Mongoose, JWT, Multer,
+                    Cloudinary, Nodemailer
+                </p>
+            </div>
+
+        </section>
+        <section id="skills">
+            <div class="skills-container">
+                <h3 class="section-heading-skills">My Skills</h3>
+                <ol class="skill-list">
+                    <li class="skill-list-item"><span class="class-bold">FrontEnd: </span> HTML, CSS, Javascript</li>
+                    <li class="skill-list-item"><span class="class-bold">Backend: </span>Node, Express, Mongoose, Prisma
+                    </li>
+                    <li class="skill-list-item"><span class="class-bold">Databases: </span>MongoDB, Postgresql</li>
+                    <li class="skill-list-item"><span class="class-bold">Contanrization: </span>Docker</li>
+                    <li class="skill-list-item"><span class="class-bold">Version Control: </span>Git, Github</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-heading">Contact Me</h2>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Reason for contacting" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy;Gopal Gavas, 2025
+    </footer>
+</body>
+
+</html>
