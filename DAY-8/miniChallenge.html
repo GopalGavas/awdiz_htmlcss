@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Position</title>
+
+    <style>
+        .wrapper {
+            height: 500px;
+            width: 600px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box-1 {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 2px dotted rebeccapurple;
+            position: absolute;
+            z-index: 3;
+        }
+
+        .box-2 {
+            height: 400px;
+            width: 400px;
+            background-color: azure;
+            border: 2px dashed red;
+            position: fixed;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display and Position: (Mini Challenge)</h1>
+    <div class="wrapper">
+        <div class="box-1">Box-1: Position Absolute</div>
+        <div class="box-2">Box-2: Position Relative</div>
+    </div>
+</body>
+
+</html>
