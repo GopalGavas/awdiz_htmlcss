@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quenx - Responsive Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <h2 class="logo">QUENX.</h2>
+        </div>
+        <nav class="nav-1">
+            <ul class="nav-1_list">
+                <li class="nav-1_list-item">Shop All</li>
+                <li class="nav-1_list-item">Best Sellers</li>
+                <li class="nav-1_list-item">Active QX</li>
+                <li class="nav-1_list-item">Artisanal</li>
+                <li class="nav-1_list-item">Kids</li>
+                <li class="nav-1_list-item">About Us</li>
+            </ul>
+        </nav>
+        <nav class="nav-2">
+            <ul class="nav-2_list">
+                <li class="nav-2_list-item search-item">
+                    <i class="fas fa-search" style="font-size: 16px;"></i>
+                    <input type="text" placeholder="Search">
+                </li>
+                <li class="nav-2_list-item"><span style="margin-right: 7px;" class="span-login">Log In</span><i
+                        class="far fa-user-circle" style="font-size: 20px;"></i> </li>
+                <li class="nav-2_list-item"><i class="far fa-heart" style="font-size: 20px;"></i>
+                </li>
+                <li class="nav-2_list-item"><i class="fas fa-shopping-bag" style="font-size: 20px;"></i>
+                </li>
+                <li class="nav-2_list-item menu-icon"><i class="fas fa-bars" style="font-size: 20px;"></i>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section">
+            <div class="hero-container">
+                <div class="left-side">
+                    <h2 class="hero-tagline">Walking with purpose.</h2>
+                    <p class="hero-text">Premium Vegan Sneakers</p>
+                </div>
+                <div class="right-side">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="./images/hero-card.jpg" alt="" class="card-image">
+                            <p class="sale-text">Sale</p>
+                        </div>
+                        <p class="card-title">Bio Runner</p>
+                        <p class="price">$199.00 <span class="span-price">$99.00</span></p>
+                        <button class="card-button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-mobile-card">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./images/hero-card.jpg" alt="" class="card-image">
+                        <p class="sale-text">Sale</p>
+                    </div>
+                    <p class="card-title">Bio Runner</p>
+                    <p class="price">$199.00 <span class="span-price">$99.00</span></p>
+                    <button class="card-button">Add to cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="card-section">
+            <div class="text-container">
+                <h2>Our Best Sellers</h2>
+                <p>View All &rarr;</p>
+            </div>
+
+            <div class="cards">
+                <div class="grid-card">
+                    <div class="img-container">
+                        <img src="./images/grid-shoe1.jpg" alt="" class="card-image">
+                        <p class="bestSeller-text">Best Seller</p>
+                    </div>
+                    <p class="grid-card-title">Active JR</p>
+                    <p class="grid-price">$80.00 <span class="span-price">$64.00</span></p>
+                </div>
+
+                <div class="grid-card">
+                    <div class="img-container">
+                        <img src="./images/grid-shoe2.jpg" alt="" class=" card-image">
+                        <p class="bestSeller-text">Best Seller</p>
+                    </div>
+                    <p class="grid-card-title">Bio Original</p>
+                    <p class="grid-price">$119.00</p>
+                </div>
+
+                <div class="grid-card">
+                    <div class="img-container">
+                        <img src="./images/grid-shoe3.jpg" alt="" class="card-image">
+                        <p class="bestSeller-text">Best Seller</p>
+                    </div>
+                    <p class="grid-card-title">Bio Perform</p>
+                    <p class="grid-price">$119.00 <span class="span-price">$99.00</span></p>
+                </div>
+
+                <div class="grid-card">
+                    <div class="img-container">
+                        <img src="./images/grid-shoe4.jpg" alt="" class="card-image">
+                        <p class="bestSeller-text">Best Seller</p>
+                    </div>
+                    <p class="grid-card-title">Limited DL</p>
+                    <p class="grid-price">$129.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kids-collection">
+            <div class="kids-collection-container">
+                <div class="kids-collection-text">
+                    <h2 class="kids-col-heading">Kids Collection 20% off Sale</h2>
+                    <p class="kids-col-text">Exclusive, one time offer</p>
+
+                    <button class="kids-col-btn">Shop now</button>
+                </div>
+
+                <div class="kids-col-image-container">
+                    <img src="./images/kids-collection.jpg" alt="" class="kids-col-img">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
